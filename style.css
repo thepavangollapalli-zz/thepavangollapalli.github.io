@@ -22,11 +22,11 @@ section{
 }
 
 h1,h2,h4,p{
-	font-family: 'Merriweather', serif;
+	font-family: 'Roboto', sans-serif;;
 }
 
 #bio{
-	background-color:#004D00;
+	background-color:#008A2E;/*#004D00*/
 	font-size:20px;
 }
 
@@ -52,7 +52,7 @@ img{
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
 	background: #eeeeee; /* Old browsers */
-	box-shadow: 10px 10px 5px black;
+	box-shadow: 5px 5px 5px black;
 }
 
 .card:hover{
@@ -71,7 +71,7 @@ img{
 	height:45vh;
 	padding:5px;
 	background-color: gray;
-	box-shadow: 10px 10px 5px black;
+	box-shadow: 5px 5px 5px black;
 	width:200px;
 
 	-webkit-user-select: none;
