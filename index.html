@@ -6,24 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-			<div class="container">
-				<ul class="nav navbar-nav">
-					<li><a href="">Home</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#prizes">Prizes</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="">Blog</a></li>
-					<li><a href="">Resume</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="jumbotron">
+		<header>
 			<div class="container">
 				<div class="row">
 				<div class="col-md-12">
@@ -32,9 +19,19 @@
 						<h4>programmer, athlete, leader</h4>
 					</div>
 				</div>
+				</div>
 			</div>
+		</header>
+		<nav class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#prizes">Prizes</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</div>
-		</div>
+		</nav>
 		<section id="bio">
 			<div class="container-fluid">
 				<div class="row">
@@ -67,19 +64,19 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-4 col-sm-12">
-						<a href="https://github.com/thepavangollapalli/GalaxyDefenders" target="_blank"><div class="card">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="https://github.com/thepavangollapalli/GalaxyDefenders" target="_blank" class="ghost"><div class="card">
 							<h2>GalaxyDefenders</h2>
 							<img alt="alien.png" src="img/Alien.png">
 						</div></a>
 					</div>
-					<div class="col-md-4 col-sm-12">
+					<div class="col-md-4 col-sm-12 col">
 						<a href="http://hackgeny.challengepost.com/submissions/32145-freakency" target="_blank"><div class="card">
 							<h2>Freakency</h2>
 							<img alt="alien.png" src="img/Freakency.png">
 						</div></a>
 					</div>
-					<div class="col-md-4 col-sm-12">
+					<div class="col-md-4 col-sm-12 col">
 						<a href="https://github.com/thepavangollapalli/face-ratios" target="_blank"><div class="card">
 							<h2>face-ratios</h2>
 							<img alt="github.png" src="img/github.png">
@@ -96,25 +93,25 @@
 					</div>
 				</div>
 				<div class="row" id="prize">
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://www.cmu.edu/homepage/society/2014/spring/funding-the-best-and-the-brightest.shtml" target="_blank"><div class="prize-card">
 							<h2>Carnegie Mellon Presidential Scholar</h2>
 							<img src="img/cmu.png">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://www.hshacks.com" target="_blank"><div class="prize-card">
 							<h2>HSHacks Campus Hero</h2>
-							<img src="img/hshacks.png">
+							<img src="img/hshacks.png" id="hack">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="prize-card">
 							<h2>Le Grand Concours National Winner:2015</h2>
-							<img src="img/concours.png">
+							<img src="img/concours.png" id="conc">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://www.deca.org/high-school-programs/high-school-educational-conferences/international-career-development-conference-hs/" target="_blank"><div class="prize-card">	
 							<h2>ICDC Qualifier</h2>
 							<img src="img/deca.png">
@@ -122,51 +119,51 @@
 					</div>
 				</div>
 				<div class="row" id="prize">
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://www.californiadeca.org/conference_scdc.php"><div class="prize-card" target="_blank">
 							<h2>3rd place at DECA States</h2>
 							<img src="img/deca.png">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://www.nationalmerit.org/nmsp.php" target="_blank"><div class="prize-card">
 							<h2>National Merit Finalist</h2>
 							<img src="img/nationalmerit.png">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://lhs.fuhsd.org" target="_blank"><div class="prize-card">	
 							<h2>Lynbrook Varsity Tennis Captain</h2>
 							<img src="img/tennis.png">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="prize-card">
 							<h2>Le Grand Concours National Winner:2014</h2>
-							<img src="img/concours.png">
+							<img src="img/concours.png" id="conc">
 						</div></a>
 					</div>
 				</div>
 				<div class="row" id="prize">
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="prize-card">	
 							<h2>Le Grand Concours National Winner:2013</h2>
-							<img src="img/concours.png">
+							<img src="img/concours.png" id="conc">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://www.lifetimetennis.com" target="_blank"><div class="prize-card">	
 							<h2>Lifetime Tennis Instructor</h2>
 							<img src="img/lifetime.png">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="https://plus.google.com/+google/posts/S3KPyw9ZR9s" target="_blank"><div class="prize-card">	
 							<h2>Google CAPE Scholar</h2>
 							<img src="img/cape.png">
 						</div></a>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col">
 						<a href="http://www.nationalgeographic.com/geobee/" target="_blank"><div class="prize-card">
 							<h2>National Geographic Bee: CA Finalist</h2>
 							<img src="img/geobee.png">
@@ -184,26 +181,28 @@
 				</div>
 				<div class="row">
 					<div class="contact">
-						<div class="col-md-3 col-sm-3">
+						<div class="col-md-3 col-sm-3 col">
 							<script language="JavaScript">
 								var username = "pavankgollapalli";
 								var hostname = "gmail.com";
 								document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "' target='_blank'>");
 							</script>
-							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+							<!-- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> -->
+							<img src="img/mail.png"></a>
 						</div>
-						<div class="col-md-3 col-sm-3">
+						<div class="col-md-3 col-sm-3 col">
 							<a href="https://www.facebook.com/pavank2015" target="_blank"><img src="img/fb.png"></a>
 						</div>
-						<div class="col-md-3 col-sm-3">
+						<div class="col-md-3 col-sm-3 col">
 							<a href="https://www.github.com/thepavangollapalli" target="_blank"><img src="img/github.png"></a>
 						</div>
-						<div class="col-md-3 col-sm-3">
+						<div class="col-md-3 col-sm-3 col">
 							<a href="https://www.linkedin.com/in/pavangollapalli" target="_blank"><img src="img/linkedin.png"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+	<script src="script.js"></script>
 	</body>
 </html>

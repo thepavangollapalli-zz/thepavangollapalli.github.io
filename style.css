@@ -1,19 +1,79 @@
-
-nav{
-	box-shadow: 0px 5px 15px #000000;
-}
-
-.jumbotron{
-	margin-top:50px;
-	background-color:#6262B8;
+header{
+	/*margin-top:0px;*/
+	background-color:black;/*#6262B8*/
 	color:white;
 	height:100vh;
 	margin-bottom:0px;
+	background: url(img/pitt.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.jumbotron h2{font-size:80px;margin-top:20vh;}
+header h2{font-size:80px;margin-top:20vh;}
 
-.jumbotron h4{font-size:40px;}
+header h4{font-size:40px;}
+
+body {
+	padding-top:100vh;
+}
+
+nav, section {
+	position:relative;
+}
+
+.nav{
+	box-shadow: 0px 5px 15px #000000;
+	background-color:black;
+	height:60px;
+	/*border-bottom: 1px solid white;*/
+	z-index:150;
+	box-shadow: 0 1px 5px white;
+	margin-bottom:-60px;
+}
+
+header, .nav-scrolled{
+	position:fixed;
+  	top:0;
+ 	width:100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+
+nav ul{
+	text-align:center;
+	height: 60px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul li{
+	margin-right:40px;
+	color: #fff;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+}
+
+nav li:hover{
+	background: #117bff;
+	cursor: pointer; 
+	transition: background .5s; 
+}
+
+nav a{
+	font-size: 15px; 
+	font-weight: lighter;
+}
 
 section{
 	font-size:17px;
@@ -26,62 +86,142 @@ h1,h2,h4,p{
 }
 
 #bio{
-	background-color:#008A2E;/*#004D00*/
+	background-color:black;/*#008A2E*/
 	font-size:20px;
 }
 
 #bio img{margin-bottom: 5vh; height: 200px; width: auto;}
 
 img{
+	height:auto;
+	width:125px;
+}
+
+/*.container{
+	text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+.col{
+	display:inline;
+	float:left;
+}*/
+
+#projects{
+	background-color:black;/*#CF5353*/
+	/*height:40vh;*/
+}
+
+.card img{
 	height:125px;
 	width:auto;
 }
 
-#projects{
-	background-color:#CF5353;
-}
-
 .card{
-	border:1px solid black;
-	border-radius:25px;
+	/*border:1px solid black;*/
+	/*border-radius:25px;*/
 	margin:20px;
+	padding-top:5px;
 	text-align: center;
-	color:black;
 	height:35vh;
 	width:275px;
+	border:3px solid #3CA55C;
+	/*background-color: #4D4D4D;*/
+	transition: background .5s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out;
+  -ms-transition: background .5s ease-in-out;
+  -o-transition: background .5s ease-in-out;
+}
 
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
-	background: #eeeeee; /* Old browsers */
-	box-shadow: 5px 5px 5px black;
+.card h2{
+	color:#3CA55C;
+	transition:.5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+
+.card:hover h2{
+	color:white;
+	transition:1s;
 }
 
 .card:hover{
-	background-color:gray;
+	background-color:#3CA55C;
+	transition:background 0.5s;
+}
+
+#conc{
+	height:125px;
+	width:100px;
+	position:absolute;
+	left:50%;
+	margin-left:-50px;
+}
+
+#hack{
+	height:125px;
+	width:auto;
+	position:absolute;
+	left:50%;
+	margin-left:-52px;
 }
 
 #prizes{
-	background-color:#765680;
+	background-color:black;/*#765680*/
 }
 
 .prize-card{
-	border:1px solid black;
-	border-radius:25px;
+	border:3px solid #3d72b4;
+	/*border-radius:25px;*/
 	margin:30px;
 	text-align: center;
 	height:45vh;
 	padding:5px;
-	background-color: gray;
-	box-shadow: 5px 5px 5px black;
-	width:200px;
+	/*box-shadow: 5px 5px 5px black;*/
+	width:197px;
+	position:relative;
 
 	-webkit-user-select: none;
  	-khtml-user-select: none;
  	-moz-user-select: none;
  	user-select: none;
+
+ 	transition: background .5s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out;
+  -ms-transition: background .5s ease-in-out;
+  -o-transition: background .5s ease-in-out;
+}
+
+.prize-card h2{
+	color:#3d72b4;
+	transition:.5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+
+.prize-card:hover h2{
+	color:white;
+	transition:1s;
 }
 
 .prize-card:hover{
-	background-color:#4D4D4D;
+	background-color:#3d72b4;/*#4D4D4D*/
+	transition:background .5s;
+}
+
+.prize-card img{
+	/*margin-right:20px;*/
+	height:125px;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    margin-left: -62.5px;
 }
 
 #prize a, a:link {
@@ -100,7 +240,7 @@ img{
 }
 
 #contact{
-	background-color:#4D4D4D;
+	background-color:black;/*#4D4D4D*/
 }
 
 .contact{
@@ -112,9 +252,4 @@ img{
 	height:5em;
 	width:auto;
 	margin-bottom:20px;
-}
-
-span.glyphicon-envelope {
-    font-size: 5em;
-    margin-bottom:20px;
 }
