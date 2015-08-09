@@ -152,11 +152,11 @@ img{
 	width:275px;
 	border:3px solid #3CA55C;
 	/*background-color: #4D4D4D;*/
-	transition: background .5s ease-in-out;
-	-webkit-transition: background .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out;
-  -ms-transition: background .5s ease-in-out;
-  -o-transition: background .5s ease-in-out;
+	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
 }
 
 .card h2{
@@ -175,7 +175,8 @@ img{
 
 .card:hover{
 	background-color:#3CA55C;
-	transition:background 0.5s;
+	border-top:5px solid white;
+	transition:0.5s;
 }
 
 #conc{
@@ -214,11 +215,11 @@ img{
  	-moz-user-select: none;
  	user-select: none;
 
- 	transition: background .5s ease-in-out;
-	-webkit-transition: background .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out;
-  -ms-transition: background .5s ease-in-out;
-  -o-transition: background .5s ease-in-out;
+ 	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
 }
 
 .prize-card h2{
@@ -237,7 +238,9 @@ img{
 
 .prize-card:hover{
 	background-color:#3d72b4;/*#4D4D4D*/
-	transition:background .5s;
+	/*border-bottom:5px solid white;*/
+	border-top:5px solid white;
+	transition:.5s;
 }
 
 .prize-card img{
@@ -269,7 +272,6 @@ img{
 }
 
 .contact{
-
 	text-align:center;
 	margin-top:50px;
 	padding-top:50px;
