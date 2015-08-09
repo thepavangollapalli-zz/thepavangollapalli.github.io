@@ -5,10 +5,10 @@ header{
 	height:100vh;
 	margin-bottom:0px;
 	background: url(img/pitt.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 header h2{font-size:80px;margin-top:20vh;}
@@ -24,12 +24,12 @@ nav, section {
 }
 
 .nav{
-	box-shadow: 0px 5px 15px #000000;
+	/*box-shadow: 0px 5px 15px #FF00FF;*/
 	background-color:black;
 	height:60px;
 	/*border-bottom: 1px solid white;*/
 	z-index:150;
-	box-shadow: 0 1px 5px white;
+	box-shadow: 0 1px 15px #FF00FF;
 	margin-bottom:-60px;
 }
 
@@ -65,7 +65,7 @@ nav ul li{
 }
 
 nav li:hover{
-	background: #117bff;
+	background: #BA02BA;/*#117bff*/
 	cursor: pointer; 
 	transition: background .5s; 
 }
