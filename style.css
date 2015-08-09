@@ -92,7 +92,7 @@ nav li:hover{
 .active{
 	color:white;
 	background-color:#BA02BA;
-	border-bottom:3px solid black;
+	border-bottom:3px solid white;
 }
 
 nav a{
@@ -269,8 +269,10 @@ img{
 }
 
 .contact{
+
 	text-align:center;
 	margin-top:50px;
+	padding-top:50px;
 }
 
 .contact img{
