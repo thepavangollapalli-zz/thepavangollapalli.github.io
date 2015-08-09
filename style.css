@@ -13,23 +13,25 @@ header{
 
 header h2{font-size:80px;margin-top:20vh;}
 
-header h4{font-size:40px;margin-bottom:10px;}
+header h4{font-size:40px;text-align: center; margin-bottom:10px;}
+
+header h5{font-size:25px;}
 
 header a{
-	border: 3px solid white;
+	/*border: 3px solid white;*/
 	padding:20px;
 	font-size: 20px;
-	transition:.5s ease-in-out;
+	/*transition:.5s ease-in-out;*/
 }
 
-header a:hover{
+/*header a:hover{
 	background-color:white;
 	color:black;
 	transition:.5s;
-}
+}*/
 
 #btn{
-	margin-top:40px;
+	margin-top:180px;
 }
 
 body {
@@ -87,6 +89,12 @@ nav li:hover{
 	transition: background .5s; 
 }
 
+.active{
+	color:white;
+	background-color:#BA02BA;
+	border-bottom:3px solid black;
+}
+
 nav a{
 	font-size: 15px; 
 	font-weight: lighter;
@@ -98,7 +106,7 @@ section{
 	color:white;
 }
 
-h1,h2,h4,p{
+h1,h2,h4,h5,p {
 	font-family: 'Roboto', sans-serif;;
 }
 
@@ -276,4 +284,63 @@ img{
 .contact img:hover{
 	opacity:1;
 	transition: .1s;
+}
+
+.cd-container {
+  width: 90%;
+  max-width: 768px;
+  margin: 2em auto;
+}
+
+/* For the back to top button */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(128, 0, 128, 0.8) url(img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #800080;
+  opacity: 1;
 }
