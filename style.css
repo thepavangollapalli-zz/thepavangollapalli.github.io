@@ -13,7 +13,24 @@ header{
 
 header h2{font-size:80px;margin-top:20vh;}
 
-header h4{font-size:40px;}
+header h4{font-size:40px;margin-bottom:10px;}
+
+header a{
+	border: 1px solid white;
+	padding:20px;
+	font-size: 20px;
+	transition:.5s ease-in-out;
+}
+
+header a:hover{
+	background-color:white;
+	color:black;
+	transition:.5s;
+}
+
+#btn{
+	margin-top:40px;
+}
 
 body {
 	padding-top:100vh;
