@@ -106,7 +106,7 @@ section{
 	color:white;
 }
 
-h1,h2,h4,h5,p {
+h1,h2,h4,h5,h3,p {
 	font-family: 'Roboto', sans-serif;;
 }
 
@@ -120,6 +120,14 @@ h1,h2,h4,h5,p {
 img{
 	height:auto;
 	width:125px;
+}
+
+#skills{
+	background-color:black;
+}
+
+#skills p{
+	text-align: center;
 }
 
 /*.container{
@@ -137,17 +145,31 @@ img{
 	/*height:40vh;*/
 }
 
+#projects h2, #projects h4{
+	color:#3CA55C;
+}
+
 .card img{
-	height:125px;
+	height:150px;
 	width:auto;
+	vertical-align:middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .card{
 	/*border:1px solid black;*/
 	/*border-radius:25px;*/
-	margin:20px;
-	padding-top:5px;
+	margin-top:20px;
+	margin-bottom:80px;
+	/*padding-top:5px;*/
 	text-align: center;
+	vertical-align: middle;
+	display:inline-block;
 	height:35vh;
 	width:275px;
 	border:3px solid #3CA55C;
@@ -175,8 +197,12 @@ img{
 
 .card:hover{
 	background-color:#3CA55C;
-	border-top:5px solid white;
+	border-top:10px solid white;
 	transition:0.5s;
+}
+
+#last-proj{
+	margin-bottom:0px;
 }
 
 #conc{
@@ -239,7 +265,7 @@ img{
 .prize-card:hover{
 	background-color:#3d72b4;/*#4D4D4D*/
 	/*border-bottom:5px solid white;*/
-	border-top:5px solid white;
+	border-top:10px solid white;
 	transition:.5s;
 }
 
