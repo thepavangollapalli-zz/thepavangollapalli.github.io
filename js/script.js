@@ -1,4 +1,8 @@
 $(document).ready(function() {
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      })
+      
       var  mn = $(".nav");
         mns = "nav-scrolled";
         hdr = $('header').height();

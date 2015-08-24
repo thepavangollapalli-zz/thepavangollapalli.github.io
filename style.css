@@ -235,6 +235,7 @@ img{
 	/*box-shadow: 5px 5px 5px black;*/
 	width:197px;
 	position:relative;
+	cursor: pointer; 
 
 	-webkit-user-select: none;
  	-khtml-user-select: none;
@@ -321,6 +322,8 @@ img{
   max-width: 768px;
   margin: 2em auto;
 }
+
+
 
 /* For the back to top button */
 
