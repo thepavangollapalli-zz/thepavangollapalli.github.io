@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="modal.css">
 	</head>
 	<body>
 		<header>
@@ -34,6 +35,7 @@
 				<ul>
 					<!-- <li><a href="#">Home</a></li> -->
 					<li><a href="#bio">About</a></li>
+					<!-- <li><a href="#skills">Skills</a></li> -->
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#prizes">Prizes</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -62,6 +64,28 @@
 				</div>
 			</div>
 		</section>
+		<!-- <section id="skills">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+					<h1>Skills</h1>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<p>python</p>
+					</div>
+					<div class="col-md-4">
+						<p>java</p>
+					</div>
+					<div class="col-md-4">
+						<p>html/css</p>
+					</div>
+				</div>
+			</div>
+		</section> -->
 		<section id="projects">
 			<div class="container-fluid">
 				<div class="row">
@@ -74,21 +98,42 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-12 col">
 						<a href="https://github.com/thepavangollapalli/GalaxyDefenders" target="_blank" class="ghost"><div class="card">
-							<h2>GalaxyDefenders</h2>
-							<img alt="alien.png" src="img/Alien.png">
+							<!-- <h2>GalaxyDefenders</h2> -->
+							<span class="helper"></span><img alt="alien.png" src="img/Alien.png">
 						</div></a>
 					</div>
+					<div class="col-md-8">
+						<h2>GalaxyDefenders</h2>
+						<h4>May 2015</h4>
+						<h4>Java, GridWorld, JUnit Testing</h4>
+						<p>Using Gridworld and Java, I and two partners made a version of Space Invaders for our APCS final project. The game maintained a version of the original gameplay while adding a powered bullet that passed through all the enemies in its column. We also completed a specification sheet containing a class structure and javadocs for all associated classes and methods. In addition to working on modifying Gridworld to create the game, I used JUnit to write a testing class that tested both the functions of individual methods and complex actions the game executed.</p>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-md-4 col-sm-12 col">
 						<a href="http://hackgeny.challengepost.com/submissions/32145-freakency" target="_blank"><div class="card">
-							<h2>Freakency</h2>
-							<img alt="alien.png" src="img/Freakency.png">
+							<!-- <h2>Freakency</h2> -->
+							<span class="helper"></span><img alt="alien.png" src="img/Freakency.png">
 						</div></a>
 					</div>
+					<div class="col-md-8">
+						<h2>Freakency</h2>
+						<h4>January 2015</h4>
+						<h4>HTML, CSS, Javascript, Android</h4>
+						<p>At the Hacking Generation Y hackathon, my team and I created a silly party game that broadcast a high-pitched sound from a random phone among a bunch of phones and asked people to guess at the source of the sound. The phones would communicate among each other to pick a random phone and switch the sources during the course of the game, so people would have more of a challenge. Using Twilio and PubNub's APIs, we created this app in about a 12 hour stretch of coding. I helped to build the initial layout of the app, test it, and put the presentation website together.</p>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-md-4 col-sm-12 col">
-						<a href="https://github.com/thepavangollapalli/face-ratios" target="_blank"><div class="card">
-							<h2>face-ratios</h2>
-							<img alt="github.png" src="img/github.png">
+						<a href="https://github.com/thepavangollapalli/face-ratios" target="_blank"><div class="card" id="last-proj">
+							<span class="helper"></span><img alt="github.png" src="img/rice.png">
 						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>face-ratios</h2>
+						<h4>June-August 2014</h4>
+						<h4>Java, Python, OpenCV</h4>
+						<p>Working at Rice University's EECS department, I wanted to do something linking computer vision to people. After much brainstorming, I decided to scan the faces of attractive people, calculate the ratios of certain distances in their facial structure (such as interpupillary differences or the length of the nose), and map the results to the background of the people. This was my first research project, and a lot of it was spent trying to figure out the setup of OpenCV and its assorted dependencies on my computer (I had a brief, unsuccessful struggle with MATLAB before switching to Python and then Java). </p>
 					</div>
 				</div>
 			</div>
@@ -98,29 +143,30 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1>Prizes</h1>
+						<p>Click on a card to learn more about it.</p>
 					</div>
 				</div>
 				<div class="row" id="prize">
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://www.cmu.edu/homepage/society/2014/spring/funding-the-best-and-the-brightest.shtml" target="_blank"><div class="prize-card">
+						<a class="md-trigger" data-modal="modal-1"><div class="prize-card">
 							<h2>Carnegie Mellon Presidential Scholar</h2>
-							<img src="img/cmu.png">
+							<span class="helper"></span><img src="img/cmu.png">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://www.hshacks.com" target="_blank"><div class="prize-card">
+						<a class="md-trigger" data-modal="modal-2"><div class="prize-card">
 							<h2>HSHacks Campus Hero</h2>
 							<img src="img/hshacks.png" id="hack">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="prize-card">
-							<h2>Le Grand Concours National Winner:2015</h2>
+						<a class="md-trigger" data-modal="modal-3"><div class="prize-card">
+							<h2>Le Grand Concours National Winner</h2>
 							<img src="img/concours.png" id="conc">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://www.deca.org/high-school-programs/high-school-educational-conferences/international-career-development-conference-hs/" target="_blank"><div class="prize-card">	
+						<a class="md-trigger" data-modal="modal-4"><div class="prize-card">	
 							<h2>ICDC Qualifier</h2>
 							<img src="img/deca.png">
 						</div></a>
@@ -128,52 +174,52 @@
 				</div>
 				<div class="row" id="prize">
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://www.californiadeca.org/conference_scdc.php"><div class="prize-card" target="_blank">
+						<a class="md-trigger" data-modal="modal-5"><div class="prize-card" target="_blank">
 							<h2>3rd place at DECA States</h2>
 							<img src="img/deca.png">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://www.nationalmerit.org/nmsp.php" target="_blank"><div class="prize-card">
+						<a class="md-trigger" data-modal="modal-6"><div class="prize-card">
 							<h2>National Merit Finalist</h2>
 							<img src="img/nationalmerit.png">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://lhs.fuhsd.org" target="_blank"><div class="prize-card">	
+						<a class="md-trigger" data-modal="modal-7"><div class="prize-card">	
 							<h2>Lynbrook Varsity Tennis Captain</h2>
 							<img src="img/tennis.png">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="prize-card">
-							<h2>Le Grand Concours National Winner:2014</h2>
+						<a class="md-trigger" data-modal="modal-8"><div class="prize-card">
+							<h2>Le Grand Concours National Winner</h2>
 							<img src="img/concours.png" id="conc">
 						</div></a>
 					</div>
 				</div>
 				<div class="row" id="prize">
 					<div class="col-md-3 col-sm-6 col">
-						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="prize-card">	
-							<h2>Le Grand Concours National Winner:2013</h2>
+						<a class="md-trigger" data-modal="modal-9"><div class="prize-card">	
+							<h2>Le Grand Concours National Winner</h2>
 							<img src="img/concours.png" id="conc">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://www.lifetimetennis.com" target="_blank"><div class="prize-card">	
+						<a class="md-trigger" data-modal="modal-10"><div class="prize-card">	
 							<h2>Lifetime Tennis Instructor</h2>
 							<img src="img/lifetime.png">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="https://plus.google.com/+google/posts/S3KPyw9ZR9s" target="_blank"><div class="prize-card">	
+						<a class="md-trigger" data-modal="modal-11"><div class="prize-card">	
 							<h2>Google CAPE Scholar</h2>
 							<img src="img/cape.png">
 						</div></a>
 					</div>
 					<div class="col-md-3 col-sm-6 col">
-						<a href="http://www.nationalgeographic.com/geobee/" target="_blank"><div class="prize-card">
-							<h2>National Geographic Bee: CA Finalist</h2>
+						<a class="md-trigger" data-modal="modal-12"><div class="prize-card">
+							<h2>National Geographic Bee</h2>
 							<img src="img/geobee.png">
 						</div></a>
 					</div>
@@ -211,9 +257,216 @@
 				</div>
 			</div>
 		</section>
+		<!-- Modals -->
+		<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://www.cmu.edu/homepage/society/2014/spring/funding-the-best-and-the-brightest.shtml" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/cmu.png" >
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Carnegie Mellon Presidential Scholar</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-2">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://www.hshacks.com" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/hshacks.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>HSHacks Campus Hero</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-3">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/concours.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Le Grand Concours National Winner: 2015</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-4">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://www.californiadeca.org/conference_scdc.php"><div class="modal-img">
+							<span class="helper"></span><img src="img/deca.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>ICDC Qualifier</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-5">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://www.californiadeca.org/conference_scdc.php" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/deca.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>3rd place at DECA States</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-6">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://www.nationalmerit.org/nmsp.php" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/nationalmerit.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>National Merit Finalist</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-7">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://lhs.fuhsd.org" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/tennis.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Lynbrook Varsity Tennis Captain</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-8">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/concours.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Le Grand Concours National Winner: 2014</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-9">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="https://www.frenchteachers.org/concours/gc_about/gc_about.htm" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/concours.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Le Grand Concours National Winner: 2013</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-10">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://www.lifetimetennis.com" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/lifetime.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Lifetime Tennis Instructor</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-11">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="https://plus.google.com/+google/posts/S3KPyw9ZR9s" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/cape.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Google CAPE Scholar</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-1" id="modal-12">
+			<div class="md-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col">
+						<a href="http://www.nationalgeographic.com/geobee/" target="_blank"><div class="modal-img">
+							<span class="helper"></span><img src="img/geobee.png">
+						</div></a>
+					</div>
+					<div class="col-md-8">
+						<h2>National Geographic Bee: CA Finalist</h2>
+						<h4>Date</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nulla velit, porttitor eu tristique et, semper et lectus. Duis vitae finibus enim. Aliquam sit amet nisi id libero laoreet maximus. Nulla ac orci justo. Nulla accumsan arcu risus, quis tincidunt ligula convallis non. Quisque est massa, tempus ac metus consectetur, cursus ultricies dui. Nulla iaculis mauris eu blandit iaculis. Nullam sagittis faucibus bibendum. Etiam non imperdiet leo, at placerat ipsum. Class aptent taciti sociosqu ad </p>
+						<a class="md-close">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	<a href="#0" class="cd-top">Top</a>
 	<script src="js/script.js"></script>
 	<script src="js/up.js"></script>
 	<script src="js/modernizr.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
 	</body>
 </html>
