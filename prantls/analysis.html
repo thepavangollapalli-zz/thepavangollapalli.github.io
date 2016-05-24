@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- Author: Pavan Gollapalli
+    Last modified March 24, 2016
+    External resources used: Highcharts
+ -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/visit_styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/highcharts.js"></script>
+        <script type="text/javascript" src="js/modules/export.js"></script>
+        <script type="text/javascript">
+$(function () {
+    $('#chart1').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'Popular Items<br>for<br>January',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0px 1px 2px black'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Items sold',
+            innerSize: '50%',
+            data: [
+                ['Burnt Almond Torte',   534],
+                ['Butter Cookie',       159],
+                ['Carrot Cake', 38],
+                {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            ]
+        }]
+    });
+});
+
+        </script>
+        <script type="text/javascript">
+$(function () {
+    $('#chart2').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'Popular Items<br>for<br>February',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0px 1px 2px black'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Items sold',
+            innerSize: '50%',
+            data: [
+                ['Burnt Almond Torte',   498],
+                ['Butter Cookie',       287],
+                ['Carrot Cake', 27],
+                {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            ]
+        }]
+    });
+});
+
+        </script>
+        <script type="text/javascript">
+$(function () {
+    $('#chart3').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'Popular Items<br>for<br>March',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0px 1px 2px black'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Items sold',
+            innerSize: '50%',
+            data: [
+                ['Burnt Almond Torte',   512],
+                ['Butter Cookie',       319],
+                ['Carrot Cake', 157],
+                {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            ]
+        }]
+    });
+});
+
+        </script>
+        <title>Prantl's Bakery | Analysis</title>
+    </head>
+    <body>
+        <nav>
+            <ul id=navbar>
+                <img src="img/logo.png" />
+                <div id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" class="navlink">Contact</a></li>
+                <li><a href="visit.html" class="navlink">Visit</a></li>
+                <li class="current"><a href="#" class="navlink">Analyze</a></li></div>
+                <div id="social">
+                    <a href="https://www.facebook.com/PrantlsBakery" target="blank"><img src="img/fb.png" /></a>
+                    <a href="https://twitter.com/prantlsbakery" target="blank"><img src="img/twitter.png" /></a>
+                    <a href="https://www.instagram.com/prantls_bakery/" target="blank"><img src="img/ig.png" /></a>
+                </div>
+            </ul>
+        </nav>
+        <div id="container">
+            <div id="spacer">Test</div>
+            <div id="charts">
+                <div id="chart1"></div>
+                <div id="chart2"></div>
+                <div id="chart3"></div>
+            </div>
+        </div>
+    </body>
+</html>

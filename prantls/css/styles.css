@@ -1,0 +1,228 @@
+html, body{
+    height:100%;
+    margin:0;
+    font-family:"Roboto", sans-serif;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    line-height:65px;
+    z-index:1000;
+    background-color: rgba(255,255,255,0.5);
+}
+
+nav img{
+    padding-top:5px;
+    height:55px;
+    width:auto;
+    float:left;
+}
+
+nav ul{
+    list-style:none;
+    margin:0px;
+}
+
+nav ul li{
+    display:inline-block;
+    line-height:65px;
+    font-weight:500;
+    transition:all .3s ease-in-out;
+}
+
+nav ul li:hover{
+    background-color:#00a665;
+    transition:all .3s ease-in-out;
+}
+
+
+nav ul li a{
+    text-decoration:none;
+    position:relative;
+    padding:30px;
+    color:#737373;
+}
+
+.current{
+    border-bottom:3px solid #00a665;
+}
+
+#nav{
+    float:left;
+    padding-left:20px;
+}
+
+#social{
+    float:right;
+    vertical-align:center;
+    margin-right:10px;
+}
+
+#social img{
+    margin-right:15px;
+    margin-top:5px;
+    height:40px;
+}
+
+nav ul li a:hover{
+    color:white;
+}
+
+.navlink:after{
+    content:"";
+    padding: 25px;  
+    position: absolute;
+    left: 0px;
+    right:0px;
+    top: -25px;
+    bottom:35px;
+} 
+
+#container div{
+    color:white;
+}
+
+#video {
+    width:100%;
+    margin-bottom:-1px;
+}
+
+#history_picture{
+    height:75vh;
+    background-image: url("../img/prantls.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    margin-top:-3px;
+}
+
+#history{
+    border:1px solid #387D7A;
+    height:60vh;
+    text-align:center;
+    padding-right:8vh;
+    padding-left:8vh;
+    background-color:#387D7A;
+    line-height:1.5em;
+}
+
+#history h1{
+    padding-top:7vh;
+    font-family: 'Lily Script One', cursive;
+    font-size:3em;
+
+}
+#history hr{
+    margin-bottom:7vh;
+}
+
+#feature_picture{
+    height:90vh;
+    background-size:100% 100%;
+    background-image: url("../img/torte.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#feature{
+    height:50vh;
+    text-align:center;
+    top:-10px;
+    padding-left:2vh;
+    padding-right:2vh;
+    background-color:#395E66;
+    border:1px solid #395E66;
+}
+
+#feature h2{
+    padding-top:15vh;
+    padding-bottom:7vh;
+}
+
+#feature a{
+    border:2px solid white;
+    font-weight:700;
+    padding:20px;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:all .3s ease-in-out;
+    margin-right:30px;
+    /*font-we:1em;*/
+}
+
+#feature a:hover{
+    background-color:#00a665;
+    color:white;
+    transition:all .2s ease-in-out;
+}
+
+#event_picture{
+    height:90vh;
+    background-size:100% 100%;
+    background-image: url("../img/wedding_banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#events{
+    height:120vh;
+    width:100%;
+    text-align:center;
+    background-color:#32936F;
+    border:1px solid #32936F;
+}
+
+#events h1{
+    padding-top:7vh;
+    font-family: 'Lily Script One', cursive;
+    font-size:3em;
+}
+
+#events h3{
+    font-weight:normal;
+}
+
+#events hr{
+    margin-bottom:5vh;
+}
+#events ol{
+    list-style:none;
+    text-align:center;
+}
+
+#events ol li{
+    display:inline-block;
+    border:1px solid white;
+    width:30%;
+    padding-bottom:30px;
+    font-family: 'Lily Script One', cursive;
+}
+
+ol #left{
+    float:left;
+}
+
+ol #right{
+    float:right;
+    margin-right:3%;
+}
+
+ol #center{
+    float:none;
+}
+
+#events ol li img{
+    height:20vh;
+}
+
+#event_content{
+    padding-top:1em;
+    padding-left:10%;
+    padding-right:10%;
+    line-height:1.5em;
+}

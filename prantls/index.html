@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Author: Pavan Gollapalli
+    Last modified March 24, 2016
+    External resources used: Google Fonts, JQuery
+ -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Prantl's Bakery | Home</title>
+    </head>
+    <body>
+        <nav>
+            <ul id=navbar>
+                <img src="img/logo.png" /><!-- source: PrantlsDesignGuide.pdf -->
+                <div id="nav">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="contact.html" class="navlink">Contact</a></li>
+                <li><a href="visit.html" class="navlink">Visit</a></li>
+                <li><a href="analysis.html" class="navlink">Analyze</a></li></div>
+                <div id="social">
+                    <a href="https://www.facebook.com/PrantlsBakery" target="blank"><img src="img/fb.png" /></a><!-- source: http://www.iconsdb.com/black-icons/facebook-6-icon.html -->
+                    <a href="https://twitter.com/prantlsbakery" target="blank"><img src="img/twitter.png" /></a><!-- source: http://www.iconsdb.com/black-icons/twitter-3-icon.html -->
+                    <a href="https://www.instagram.com/prantls_bakery/" target="blank"><img src="img/ig.png" /></a><!-- source: http://www.iconsdb.com/black-icons/instagram-icon.html -->
+                </div>
+                <!-- Image links to social media -->
+                <!-- Start transparent over video, then solidify after scroll -->
+            </ul>
+        </nav>
+        <div id="container">
+            <div id="video-banner">
+                <video id="video" preload autoplay muted>
+                    <source src="img/banner.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Images interspersed through content (with parallax.js) -->
+            <div id="startchange"></div>
+            <div id="history_picture">
+                <!-- source: https://www.google.com/maps/place/Prantl's+Bakery/@40.440995,-80.002187,3a,75y,90t/data=!3m8!1e2!3m6!1s-7lK7BBxG3rY%2FVls0hsSSdYI%2FAAAAAAAAVSI%2FOyRu3gdOFtM!2e4!3e12!6s%2F%2Flh4.googleusercontent.com%2F-7lK7BBxG3rY%2FVls0hsSSdYI%2FAAAAAAAAVSI%2FOyRu3gdOFtM%2Fs188-k-no%2F!7i5312!8i2988!4m2!3m1!1s0x8834f15696baf219:0x9e8bccef10009784!6m1!1e1 -->
+            </div>
+            <div id="history">
+                <!-- paste in history -->
+                <h1>About Us</h1><hr>
+                <p>Prantl&rsquo;s Bakery is a Pittsburgh institution. Its &quot;Burnt Almond Torte&quot; and 100+ sinful sweets have been a tradition for the last 40 years. In fact, there&rsquo;s been a bakery in continuous operation at the flagship Shadyside store for over 100 years. Prantl&rsquo;s is a bakery in the German tradition, with old-fashioned fruit Danish and nut-filled coffeecakes, but we can&rsquo;t help but get excited about some of our &quot;new favorites&quot; as well, like key lime pie and our buttery croissants. In addition to our mouth watering special order cakes, we are famous for our &quot;Burnt Almond Torte&quot;, which was conceived by Henry Prantl after a trip to California. There was an almond glut the year he went and the Almond Board was trying to get bakers to use almonds in new and inspiring ways. Henry picked up a few ideas and brought them back to Pittsburgh where he refined them into our current recipe for &quot;Burnt Almond Torte&quot;, a unique and addictive dessert.
+                Henry and Jane Prantl retired from the business in 2007. The bakery is now owned and operated by John M. Felice, who strives to maintain the tradition of high quality baked goods.
+                </p>
+            </div>
+            <div id="feature_picture">
+                <!-- source: screenshot from video -->
+            </div>
+            <div id="feature">
+                <h2>&quot;No cake made in any of the five boroughs of New York holds a candle to Prantl&rsquo;s amazing <strong>burnt almond torte</strong>. It is possibly the BEST cake America has to offer.&quot; <i>- Huffington Post</i>, 2014</h2>
+                <!-- Ghost button to see feature on torte -->
+                <div id="event_buttons">
+                    <a href="http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html">Read the article</a>
+                    <a href="https://www.goldbely.com/prantls-bakery">Order it now</a>
+                </div>
+
+            </div>
+
+            <div id="event_picture">
+                <!-- source: http://hideawaycove.com/wp-content/uploads/2015/10/wedding-02.jpg -->
+            </div>
+
+            <div id="events">
+                <!-- ordered list of weddings, celebrations, holidays -->
+                <h1>Events</h1>
+                <h3>Mouse over each event for a description of our offerings.</h3>
+                <hr>
+                <ol>
+                    <li id="left" onmouseover="showDescription('Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from.\n Batters and fillings:\nOur most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry creme filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can\'t hurt to ask!\nSizes:\nTo keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in \nbetween cake sizes, we can offer additional sheet cakes up to the amount of slices required.\nPricing:\nOur wedding cakes vary in price, depending on type, size, and \'extras\' such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 - $3.75 per serving range.\nOther delicacies:\nOur wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3\' mini-cakes, cupcakes, etc.) and of course there\'s always\nroom in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms\' Cakes, Shower Cakes, Monogrammed Cookies, Wedding \nChallah, Breakfast Trays, etc.\nDelivery:\nWe co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.')" onmouseout="hideDescription()">
+                        <h3>Weddings</h3>
+                        <img src="img/wedding.png" /><!-- source: http://www.prantlsbakery.com/weddings/ -->
+                    </li>
+                    <li id="center" onmouseover="showDescription('Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life\'s special events and can customize them to showcase your theme or ideas. View our photo gallery on Facebook, and if you would like to inquire about a custom cake not available on our website, please email us at info@prantlsbakery.com.  \nSizes:\nWe offer custom cake rounds sizes from 8\'-12\'. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full. \nPricing:\nOur cakes vary in price, depending on type, size, and \'extras\' such as decorations and personalizations. \nDelivery:\nDelivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.')" onmouseout="hideDescription()">
+                        <h3>Celebrations</h3>
+                        <img src="img/celebration.jpg" /><!-- source: http://www.prantlsbakery.com/celebrations/ -->
+                    </li>
+                    <li id="right" onmouseover="showDescription('From Valentine\'s Day, Christmas, Thanksgiving, and Mardi Gras, we have cakes for your favorite occasions! \nEaster is right around the corner. Check out our baked goods that are perfect for your fun, colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.')" onmouseout="hideDescription()">
+                        <h3>Holidays</h3>
+                        <img src="img/holiday.jpg" /><!-- source: http://www.prantlsbakery.com/wp-content/uploads/easter-cookies.jpg
+ -->
+                    </li>
+                </ol>
+                <div id="event_content">
+                </div>
+            </div>
+
+            <footer>
+                <!-- Links to social media -->
+            </footer>
+        </div>
+    </body>
+</html>

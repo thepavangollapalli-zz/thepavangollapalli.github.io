@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Author: Pavan Gollapalli
+    Last modified March 24, 2016
+    External resources used: Google Fonts, JQuery, Highcharts
+ -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/visit_styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/highcharts.js"></script>
+        <script type="text/javascript" src="js/modules/export.js"></script>
+        <script type="text/javascript">
+$(function () {
+    $('#container-graph').highcharts({
+        title: {
+            text: 'Customer Traffic',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Details the number of customers throughout the day.',
+            x: -20
+        },
+        xAxis: {
+            title: {
+                text: 'Time'
+            },
+            categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                '1pm', '2pm', '3pm', '4pm', '5pm']
+        },
+        yAxis: {
+            title: {
+                text: 'Number of visitors'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ' Number of visitors (on average)'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Shadyside',
+            data: [10,8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+        }, {
+            name: 'Downtown',
+            data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+        }]
+    });
+});
+        </script>
+        <title>Prantl's Bakery | Visit</title>
+    </head>
+    <body>
+        <nav>
+            <ul id=navbar>
+                <img src="img/logo.png" />
+                <div id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" class="navlink">Contact</a></li>
+                <li class="current"><a href="#" class="navlink">Visit</a></li>
+                <li><a href="analysis.html" class="navlink">Analyze</a></li></div>
+                <div id="social">
+                    <a href="https://www.facebook.com/PrantlsBakery" target="blank"><img src="img/fb.png" /></a>
+                    <a href="https://twitter.com/prantlsbakery" target="blank"><img src="img/twitter.png" /></a>
+                    <a href="https://www.instagram.com/prantls_bakery/" target="blank"><img src="img/ig.png" /></a>
+                </div>
+            </ul>
+        </nav>
+        <div id="container">
+            <div id="location_picture">
+                <!-- source: https://upload.wikimedia.org/wikipedia/commons/2/2f/Pittsburgh_WEO_Night_1.jpg -->
+            </div>
+            <div id="map">
+                <h1>Our Locations</h1><hr />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29526.536435471473!2d-79.96101118836201!3d40.44635133185585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sprantl&#39;s+bakery!5e0!3m2!1sen!2sus!4v1458786883030" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div id="locations">
+                <div id="downtown">
+                    <h2>Downtown</h2>
+                    <img src="img/prantls_downtown.jpg" /> <!-- http://www.parmesanprincess.com/wp-content/uploads/2014/04/image38.jpg -->
+                </div>
+                <div id="table">
+                    <table border="1px solid black">
+                        <tr>
+                            <td>438 Market Street<br />Pittsburgh, PA 15222</td>
+                            <td>5525 Walnut Street<br />Pittsburgh, PA 15232</td>
+                        </tr>
+                        <tr>
+                            <td>412-471-6861</td>
+                            <td>412-621-2092</td>
+                        </tr>
+                        <tr>
+                            <td><a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a></td>
+                            <td><a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="index.html">Website</a></td>
+                            <td><a href="index.html">Website</a></td>
+                        </tr>
+                        <tr>
+                            <td>Monday-Friday: 7am-6pm<br />Saturday: 9am-4pm<br />Sunday: 10am-3pm</td>
+                            <td>Monday: 9am-4pm<br />Tuesday-Saturday: 7:30am-6pm<br />Sunday: 9am-4pm</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="shadyside">
+                    <h2>Shadyside</h2>
+                    <img src="img/prantls_shadyside.jpg" /> <!-- http://media-cdn.tripadvisor.com/media/photo-s/03/5c/8d/59/prantl-s-bakery.jpg -->
+                </div>
+            </div>
+            <div id="container-graph"></div>
+        </div>
+    </body>
+</html>

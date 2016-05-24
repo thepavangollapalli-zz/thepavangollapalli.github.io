@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Author: Pavan Gollapalli
+    Last modified March 24, 2016
+    External resources used: Google Fonts, JQuery
+ -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/contact_styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/validation.js"></script>
+        <title>Prantl's Bakery | Contact</title>
+    </head>
+    <body>
+        <nav>
+            <ul id=navbar>
+                <img src="img/logo.png" />
+                <div id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="#" class="navlink">Contact</a></li>
+                <li><a href="visit.html" class="navlink">Visit</a></li>
+                <li><a href="analysis.html" class="navlink">Analyze</a></li></div>
+                <div id="social">
+                    <a href="https://www.facebook.com/PrantlsBakery" target="blank"><img src="img/fb.png" /></a>
+                    <a href="https://twitter.com/prantlsbakery" target="blank"><img src="img/twitter.png" /></a>
+                    <a href="https://www.instagram.com/prantls_bakery/" target="blank"><img src="img/ig.png" /></a>
+                </div>
+            </ul>
+        </nav>
+        <div id="container">
+            <div id="contact_picture">
+                <!-- source: http://www.post-gazette.com/image/2013/12/10/ca35,29,1982,1354/Prantls-1-4.jpg -->
+            </div>
+            <div id="contact">
+                <h1>Contact Us</h1><hr />
+                <form name="contact_form" onsubmit="return validate()" action="MAILTO:pgollapa@andrew.cmu.edu" method="post" enctype="text/plain">
+                    <fieldset>
+                        <label for="name">Name (required):</label><br />
+                        <input class="textbox" type="text" name="name" maxlength="250" placeholder="Your name" required><br />
+                        <label for="zipcode">Zipcode:</label><br />
+                        <input class="textbox" type="text" name="zipcode" placeholder="Your zipcode" id="zipcode"><br />
+                        <label for="email">Email address (required):</label><br />
+                        <input class="textbox" type="email" name="email" placeholder="email@address.com" required><br />
+                        <label for="textarea">Message:</label><br />
+                        <textarea id="contact_form" rows="10" cols="50" maxlength="1000" name="message"></textarea><br /><br />
+                        <input type="checkbox" name="updates" value="yes">Sign me up for cool updates from our mailing list!<br /><br />
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </fieldset><br /><br />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
