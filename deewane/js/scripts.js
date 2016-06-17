@@ -1,5 +1,5 @@
 //MODIFIED FROM http://jsfiddle.net/LaL3v/325/
-var player = new Audio('../audio/track_clipped.mp3');
+var player = new Audio('audio/track_clipped.mp3');
 
 $(document).ready(function () {
 //    $(".overlay").hide();
