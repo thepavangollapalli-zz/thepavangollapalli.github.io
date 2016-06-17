@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Deewane A Cappella</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+<!--        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>-->
+<!--        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400|Raleway:400,700" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+        $(function(){
+           // See if this is a touch device
+           if ($(window).size < 480)
+           {
+              // Set the correct [touchscreen] body class
+              $('body').removeClass('no-touch').addClass('touch');
+              $('.member_description').css({"opacity":"1"});
+              // Add the touch toggle to show text when tapped
+              $('div.inner img').click(function(){
+                 $(this).closest('.inner').toggleClass('touchFocus');
+              });
+           }
+        });
+        </script>
+    </head>
+
+    <body class="no-touch"> 
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#music">MUSIC</a></li>
+                <li><a href="#history">HISTORY</a></li>
+                <li><a href="#members">MEMBERS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger">
+            <a href="#">
+              &#9776;
+            </a>
+        </div>
+        <div class="overlay">
+        </div>
+        <div id="mobile-nav">
+            <ul>
+                <li><a href="#cover">HOME</a></li>
+                <li><a href="#music">MUSIC</a></li>
+                <li><a href="#history">HISTORY</a></li>
+                <li><a href="#members">MEMBERS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="cover">
+        </div>
+        <div id="music">
+            <h1>KAL</h1>
+            <h2>listen today on Spotify and Apple Music</h2>
+            <div id="music_left">
+                <img src="img/kal.jpg" alt="kal">
+            </div>
+            <div id="music_right">
+                <div class="embed-responsive">
+                    <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A5SCQow3jVp0KUlebxpj5mm" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                </div>
+            </div>
+        </div>
+         <div class="spacer"></div> 
+        <div id="history">
+            <h1>GET HYPE.</h1>
+            <div id="history_left">
+                <iframe src="https://www.youtube.com/embed/cnUSNFpU7Kw" width="704.55" height="396" frameborder="0"></iframe>
+            </div>
+            <div id="history_right">
+                <div id="hist_container">
+                    <h2>A brief history of CMU Deewane</h2>
+                    <p>Deewane is Carnegie Mellon University's premier South Asian all-male a cappella group. We are known on campus and around the country for our unique ability to blend music from all ends of the spectrum - East and West. With their name being Hindi for "madly in love", the group was founded in the fall semester of 2007 by a group of Carnegie Mellon students who wanted to showcase their passion for music.</p>
+
+                    <p>We've grown from a ragtag bunch into a real musical force, and have performed at such places as Baltimore MD, College Park MD, Ann Arbor MI, and Chicago IL. With more performances, more arrangements, and a whole lot more Deewane coming up in the new year, we're sure that you too will soon be "deewane" for DEEWANE!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="members">
+            <h1>MEET THE SQUAD</h1>
+            <div id="wrapper">
+                <div class="box">
+                    <!-- ashu -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/ashu.jpg">
+                        <img class="serious" src="img/serious/ashu.jpg">
+                        <div class="member_description">
+                            <h2>Ashutosh Sharma</h2>
+                            <h2>President</h2>
+                            <h2>Material Sciences '18</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <!-- pavan -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/pavan.jpg">
+                        <img class="serious" src="img/serious/pavan.jpg">
+                        <div class="member_description">
+                            <h2>Pavan Gollapalli</h2>
+                            <h2>Tour Manager</h2>
+                            <h2>Information Systems '19</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- yugesh -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/yugesh.jpg">
+                        <img class="serious" src="img/serious/yugesh.jpg">
+                        <div class="member_description">
+                            <h2>Yugesh Ramsaroop</h2>
+                            <h2>Music Director</h2>
+                            <h2>Biology '19<h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- tyler -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/tyler.jpg">
+                        <img class="serious" src="img/serious/tyler.jpg">
+                        <div class="member_description">
+                            <h2>Tyler Henning</h2>
+                            <h2>Business Manager</h2>
+                            <h2>Finance '19</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- doug -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/doug.jpg">
+                        <img class="serious" src="img/serious/doug.jpg">
+                        <div class="member_description">
+                            <h2>Douglas Qian</h2>
+                            <h2>Public Relations Chair</h2>
+                            <h2>Computational Biology '19</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- hari -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/hari.jpg">
+                        <img class="serious" src="img/serious/hari.jpg">
+                        <div class="member_description">
+                            <h2>Hari Guduru</h2>
+                            <h2>Electrical and Computer Engineering '17</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- karan -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/karan.jpg">
+                        <img class="serious" src="img/serious/karan.jpg">
+                        <div class="member_description">
+                            <h2>Karan Bokil</h2>
+                            <h2>Information Systems '19</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- mihir -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/mihir.jpg">
+                        <img class="serious" src="img/serious/mihir.jpg">
+                        <div class="member_description">
+                            <h2>Mihir Yerande</h2>
+                            <h2>Mathematics '17</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- arjun -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/arjun.jpg">
+                        <img class="serious" src="img/serious/arjun.jpg">
+                        <div class="member_description">
+                            <h2>Arjun Chidambaram</h2>
+                            <h2>Statistics and Machine Learning '18</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- suhaas -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/suhaas.jpg">
+                        <img class="serious" src="img/serious/suhaas.jpg">
+                        <div class="member_description">
+                            <h2>Suhaas Reddy</h2>
+                            <h2>Computer Science '17</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- akash -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/akash.jpg">
+                        <img class="serious" src="img/serious/akash.jpg">
+                        <div class="member_description">
+                            <h2>Akash Bharadwaj</h2>
+                            <h2>Computer Science PhD</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- sanjay -->
+                    <div class="inner">
+                        <img class="funny" src="img/funny/sanjay.jpg">
+                        <img class="serious" src="img/serious/sanjay.jpg">
+                        <div class="member_description">
+                            <h2>Sanjay Chandrasekharan</h2>
+                            <h2>Computer Science '17</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="box">
+                    <div class="inner">
+                        <img class="funny" src="img/kal.jpg">
+                        <img class="serious" src="img/bg.jpg">
+                        <div class="member_description">
+                            <p>Hello</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div id="contact">
+            <h1>CONTACT</h1>
+            <h2>Send inquiries to deewaneacappella@gmail.com, or fill out the form below!</h2><br>
+<!--
+            <div id="typeform">
+                <div class="typeform-widget" data-url="https://pavangollapalli.typeform.com/to/EcMZLD" data-text="Deewane Inquiries" style="width:80%;height:400px;margin:auto"></div>
+                <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+            </div>
+-->
+            <br>
+            <div class="pr_icons">
+                <a href="https://www.facebook.com/cmudeewane/" target="blank"><img src="img/contact/fb.png" class="social"></a>
+                <a href="https://twitter.com/cmudeewane" target="blank"><img src="img/contact/twitter.png" class="social"></a>
+                <a href="https://www.instagram.com/cmudeewane/" target="blank"><img src="img/contact/ig.png" class="social"></a>
+                <a href="snapchat.pdf" target="blank"><img src="img/contact/snapchat.png" class="social"></a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with &#9825; by Pavan Gollapalli </p>
+        </footer>
+    </body>
+
+</html>
