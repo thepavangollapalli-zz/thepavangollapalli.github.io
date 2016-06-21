@@ -3,6 +3,11 @@ var player = new Audio('audio/track_clipped.mp3');
 
 $(document).ready(function () {
 //    $(".overlay").hide();
+    if($(window).width() < 340)
+    {
+        console.log("put in email link");
+        $("#email").html("<h2><a href='mailto:deewaneacappella@gmail.com'>Email</a></h2>");
+    }
     $("nav ul li a").css({"color":"black"});      
     var scroll_start = 0;
     var startchange = $('#music');
@@ -60,7 +65,10 @@ $(document).ready(function () {
    });
    if ($(window).width() < 480) {
         $('#music_right').html('<iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A5SCQow3jVp0KUlebxpj5mm" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>');
-        $('#contact').html('<h1>CONTACT</h1><h2>Send inquiries to deewaneacappella@gmail.com!</h2><br><div class="pr_icons"><a href="https://www.facebook.com/cmudeewane/" target="blank"><img src="img/contact/fb.png" class="social"></a><a href="https://twitter.com/cmudeewane" target="blank"><img src="img/contact/twitter.png" class="social"></a><a href="https://www.instagram.com/cmudeewane/" target="blank"><img src="img/contact/ig.png" class="social"></a><a href="snapchat.pdf" target="blank"><img src="img/contact/snapchat.png" class="social"></a></div>')
+        if($(window).width()>340)
+        {
+            $('#contact').html('<h1>CONTACT</h1><h2>Send inquiries to deewaneacappella@gmail.com!</h2><br><div class="pr_icons"><a href="https://www.facebook.com/cmudeewane/" target="blank"><img src="img/contact/fb.png" class="social"></a><a href="https://twitter.com/cmudeewane" target="blank"><img src="img/contact/twitter.png" class="social"></a><a href="https://www.instagram.com/cmudeewane/" target="blank"><img src="img/contact/ig.png" class="social"></a><a href="snapchat.pdf" target="blank"><img src="img/contact/snapchat.png" class="social"></a></div>')
+        }
        } else {
         //enables embed_responsive if not smartphone
         $('#music_right').html('<div class="embed-responsive"><iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A5SCQow3jVp0KUlebxpj5mm" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></div>');
@@ -119,4 +127,5 @@ $(document).ready(function () {
 //        $("#hamburger a").show();
         $(".overlay").fadeOut("fast");
     });
+
 });
