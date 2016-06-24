@@ -1,5 +1,5 @@
 //MODIFIED FROM http://jsfiddle.net/LaL3v/325/
-var player = new Audio('audio/track_clipped.mp3');
+//var player = new Audio('audio/track_clipped.mp3');
 
 $(document).ready(function () {
 //    $(".overlay").hide();
@@ -14,13 +14,21 @@ $(document).ready(function () {
     var offset = startchange.offset();
     var highlight = false;
     //Let's get some scroll tunes up in here
-    $(window).scroll(function(event) {
-        player.play();
-        clearTimeout($.data(this, 'scrollTimer'));
-        $.data(this, 'scrollTimer', setTimeout(function() {
-            player.pause();
-        }, 750));
-    });
+//    var playMusic = true;
+//    if ('ontouchstart' in window)
+//    {
+//           playMusic = false;
+//    }
+//    $(window).scroll(function(event) {
+//        if(playMusic)
+//        {
+//            player.play();
+//            clearTimeout($.data(this, 'scrollTimer'));
+//            $.data(this, 'scrollTimer', setTimeout(function() {
+//                player.pause();
+//            }, 750));
+//        }
+//    });
 
     $(document).scroll(function() { 
       // console.log("should highlight scroll");
