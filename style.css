@@ -26,11 +26,12 @@ header{
     color:white;
     height:100vh;
     margin-bottom:0px;
-    background: url(img/pitt.jpg) no-repeat center center fixed; 
+    background: url(img/pitt.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index:2000;
 }
 
 header h2{font-size:80px;margin-top:20vh;}
@@ -107,8 +108,8 @@ nav ul li{
 
 nav li:hover{
     background: #BA02BA;/*#117bff*/
-    cursor: pointer; 
-    transition: background .5s; 
+    cursor: pointer;
+    transition: background .5s;
 }
 
 .active{
@@ -118,7 +119,7 @@ nav li:hover{
 }
 
 nav a{
-    font-size: 15px; 
+    font-size: 15px;
     font-weight: lighter;
 }
 
@@ -257,7 +258,7 @@ img{
     /*box-shadow: 5px 5px 5px black;*/
     width:197px;
     position:relative;
-    cursor: pointer; 
+    cursor: pointer;
 
     -webkit-user-select: none;
     -khtml-user-select: none;
